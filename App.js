@@ -1,13 +1,17 @@
 import React from 'react';
-import {SafeAreaView, ScrollView, Text, StatusBar} from 'react-native';
+import 'react-native-gesture-handler';
+import {SafeAreaView, ScrollView, Text} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
 
 const App = () => {
   return (
-    <SafeAreaView>
-      <ScrollView>
-        <Text testID="welcome">Welcome</Text>
-      </ScrollView>
-    </SafeAreaView>
+    <NavigationContainer>
+      <SafeAreaView>
+        <ScrollView>
+          <Text testID="welcome">Welcome</Text>
+        </ScrollView>
+      </SafeAreaView>
+    </NavigationContainer>
   );
 };
 
